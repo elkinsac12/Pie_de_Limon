@@ -1,0 +1,148 @@
+{
+  "productos": [
+    {
+      "id": "producto-1",
+      "nombre": "Producto 1",
+      "categoria": "postres",
+      "precio": null,
+      "imagen": "Producto1.JPEG",
+      "descripcion": ""
+    },
+    {
+      "id": "producto-2",
+      "nombre": "Producto 2",
+      "categoria": "postres",
+      "precio": null,
+      "imagen": "Producto2.JPEG",
+      "descripcion": ""
+    },
+    {
+      "id": "producto-3",
+      "nombre": "Producto 3",
+      "categoria": "postres",
+      "precio": null,
+      "imagen": "Producto3.JPEG",
+      "descripcion": ""
+    },
+    {
+      "id": "producto-4",
+      "nombre": "Producto 4",
+      "categoria": "postres",
+      "precio": null,
+      "imagen": "Producto4.JPEG",
+      "descripcion": ""
+    },
+    {
+      "id": "producto-5",
+      "nombre": "Producto 5",
+      "categoria": "postres",
+      "precio": null,
+      "imagen": "Producto5.JPEG",
+      "descripcion": ""
+    },
+    {
+      "id": "producto-6",
+      "nombre": "Producto 6",
+      "categoria": "postres",
+      "precio": null,
+      "imagen": "Producto6.JPEG",
+      "descripcion": ""
+    },
+    {
+      "id": "producto-7",
+      "nombre": "Producto 7",
+      "categoria": "postres",
+      "precio": null,
+      "imagen": "Producto7.JPEG",
+      "descripcion": ""
+    },
+    {
+      "id": "producto-8",
+      "nombre": "Producto 8",
+      "categoria": "postres",
+      "precio": null,
+      "imagen": "Producto8.JPEG",
+      "descripcion": ""
+    },
+    {
+      "id": "producto-9",
+      "nombre": "Producto 9",
+      "categoria": "postres",
+      "precio": null,
+      "imagen": "Producto9.JPEG",
+      "descripcion": ""
+    },
+    {
+      "id": "producto-10",
+      "nombre": "Producto 10",
+      "categoria": "postres",
+      "precio": null,
+      "imagen": "Producto10.JPEG",
+      "descripcion": ""
+    },
+    {
+      "id": "producto-11",
+      "nombre": "Producto 11",
+      "categoria": "postres",
+      "precio": null,
+      "imagen": "Producto11.JPEG",
+      "descripcion": ""
+    },
+    {
+      "id": "producto-12",
+      "nombre": "Producto 12",
+      "categoria": "postres",
+      "precio": null,
+      "imagen": "Producto12.JPEG",
+      "descripcion": ""
+    },
+    {
+      "id": "producto-13",
+      "nombre": "Producto 13",
+      "categoria": "postres",
+      "precio": null,
+      "imagen": "Producto13.JPEG",
+      "descripcion": ""
+    },
+    {
+      "id": "producto-14",
+      "nombre": "Producto 14",
+      "categoria": "postres",
+      "precio": null,
+      "imagen": "Producto14.JPEG",
+      "descripcion": ""
+    },
+    {
+      "id": "producto-15",
+      "nombre": "Producto 15",
+      "categoria": "postres",
+      "precio": null,
+      "imagen": "Producto15.JPEG",
+      "descripcion": ""
+    },
+    {
+      "id": "producto-16",
+      "nombre": "Producto 16",
+      "categoria": "postres",
+      "precio": null,
+      "imagen": "Producto16.JPEG",
+      "descripcion": ""
+    },
+    {
+      "id": "producto-17",
+      "nombre": "Producto 17",
+      "categoria": "postres",
+      "precio": null,
+      "imagen": "Producto17.JPEG",
+      "descripcion": ""
+    },
+    {
+      "id": "varios",
+      "nombre": "Varios",
+      "categoria": "postres",
+      "precio": null,
+      "imagen": "Varios.JPEG",
+      "descripcion": ""
+    }
+  ]
+}

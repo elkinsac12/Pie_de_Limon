@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pie de Limón · Postres artesanales</title>
+<meta name="description" content="Pies, minis y brownies artesanales. Elige tus productos y haz tu pedido por WhatsApp.">
+<meta name="theme-color" content="#000000">
+<meta property="og:title" content="Pie de Limón">
+<meta property="og:description" content="Postres artesanales. Elige y pide por WhatsApp.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/estilos.css?v=2.0.0">
+<script type="module" src="assets/js/main.js?v=2.0.0"></script>
+</head>
+<body>
+<a class="saltar" href="#productos">Ir a los productos</a>
+
+<!-- ============ Encabezado ============ -->
+<header class="barra" id="barra">
+  <div class="contenedor barra-in">
+    <a class="marca" href="#inicio" aria-label="Pie de Limón, ir al inicio">
+      <img src="assets/img/Logo.jpeg" alt="Pie de Limón" width="164" height="62">
+    </a>
+    <ul class="nav" id="nav">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#productos">Productos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <!-- BOTÓN "TU PEDIDO" OCULTO. Para mostrarlo de nuevo, borra la línea de apertura y la de cierre de este comentario.
+    <button class="btn-carrito" id="abrirCarrito" type="button" aria-haspopup="dialog" aria-controls="carrito">
+      Tu pedido <span class="num" id="numCarrito" aria-label="productos en el pedido">0</span>
+    </button>
+    -->
+    <button class="menu-btn" id="menuBtn" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+<!-- ============ Inicio ============ -->
+<section class="hero" id="inicio">
+  <div class="contenedor hero-grid">
+    <div class="hero-texto">
+      <p class="etiqueta">Postres artesanales</p>
+      <h1>Pies, minis y brownies hechos a mano</h1>
+      <p class="hero-sub">Elige tus favoritos, arma tu pedido y envíalo por WhatsApp. Nosotros nos encargamos del resto.</p>
+      <div class="hero-btns">
+        <a href="#productos" class="btn btn-naranja">Ver productos</a>
+        <a href="#contacto" class="btn btn-borde">Contáctanos</a>
+      </div>
+    </div>
+    <figure class="hero-foto">
+      <img id="heroImg" data-foto alt="Productos de Pie de Limón" width="1200" height="800">
+    </figure>
+  </div>
+</section>
+
+<!-- ============ Bloques de valor ============ -->
+<section class="valores-sec" aria-label="Lo que nos distingue">
+  <div class="contenedor valores" id="valores"></div>
+</section>
+
+<!-- ============ Categorías (íconos) ============ -->
+<section class="categorias" id="categorias" aria-labelledby="tCat" hidden>
+  <div class="contenedor">
+    <h2 id="tCat">Explora por categoría</h2>
+    <div class="iconos" id="iconos"></div>
+  </div>
+</section>
+
+<!-- ============ Catálogo ============ -->
+<section class="catalogo" id="productos">
+  <div class="contenedor">
+    <h2>Nuestros productos</h2>
+    <p class="intro">Toca el <b>+</b> para agregar a tu pedido. Al final lo envías por WhatsApp y coordinamos pago y entrega.</p>
+    <div class="pestanas" id="pestanas" role="tablist" aria-label="Categorías de productos"></div>
+    <div class="grilla" id="grilla" role="tabpanel" aria-live="polite"></div>
+  </div>
+</section>
+
+<!-- ============ Contacto ============ -->
+<section class="contacto" id="contacto">
+  <div class="contenedor">
+    <h2>¿Dudas antes de pedir?</h2>
+    <p class="intro">Escríbenos y te ayudamos a elegir. También nos encuentras en redes.</p>
+    <div class="contacto-btns">
+      <a class="btn btn-wa" id="btnContacto" href="#" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn btn-borde" id="lnkInstagram" href="#" target="_blank" rel="noopener">Instagram</a>
+      <a class="btn btn-borde" id="lnkFacebook" href="#" target="_blank" rel="noopener">Facebook</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="contenedor pie">
+    <span>© <span id="anio">2021</span> Pie de Limón. Hecho en Colombia.</span>
+    <nav aria-label="Redes"><a id="pieInstagram" href="#" target="_blank" rel="noopener">Instagram</a><a id="pieFacebook" href="#" target="_blank" rel="noopener">Facebook</a></nav>
+  </div>
+</footer>
+
+<!-- ============ Pedido ============ -->
+<div class="velo" id="velo"></div>
+<aside class="carrito" id="carrito" role="dialog" aria-modal="true" aria-labelledby="carritoTitulo" aria-hidden="true">
+  <div class="carrito-cab">
+    <h2 id="carritoTitulo">Tu pedido</h2>
+    <button class="cerrar" id="cerrarCarrito" type="button" aria-label="Cerrar pedido">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <div class="carrito-cuerpo" id="carritoCuerpo"></div>
+  <div class="carrito-pie" id="carritoPie">
+    <div class="total"><span>Total</span><strong id="carritoTotal">$0</strong></div>
+    <p class="nota" id="carritoNota"></p>
+    <a class="btn btn-wa" id="enviarPedido" href="#" target="_blank" rel="noopener">Enviar pedido por WhatsApp</a>
+    <button class="vaciar" id="vaciarCarrito" type="button">Vaciar pedido</button>
+  </div>
+</aside>
+
+<div class="aviso" id="aviso" role="status" aria-live="polite"><span id="avisoTxt"></span></div>
+
+<!-- ============ Botón flotante de WhatsApp ============ -->
+<a class="grano" id="grano" href="#" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+  <span class="cuenta" id="granoCuenta">0</span>
+  <svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true">
+    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.198-.198.347-.764.966-.937 1.164-.173.198-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+  </svg>
+</a>
+
+</body>
+</html>

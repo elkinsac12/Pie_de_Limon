@@ -1,0 +1,3 @@
+Pon aquí las fotos con estos nombres exactos (respeta mayúsculas y la extensión .JPEG):
+Producto1.JPEG ... Producto17.JPEG, Varios.JPEG y "Todos los productos.JPEG"
+Si cambias un nombre, actualiza el campo "imagen" en data/productos.json.
