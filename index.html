@@ -13,6 +13,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/estilos.css?v=2.0.0">
+
+<!-- AOS CSS (Animaciones al hacer scroll) -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 <script type="module" src="assets/js/main.js?v=2.0.0"></script>
 </head>
 <body>
@@ -44,7 +48,8 @@
 <!-- ============ Inicio ============ -->
 <section class="hero" id="inicio">
   <div class="contenedor hero-grid">
-    <div class="hero-texto">
+    <!-- Animación para el texto: aparece de izquierda a derecha -->
+    <div class="hero-texto" data-aos="fade-right">
       <p class="etiqueta">Postres artesanales</p>
       <h1>Pies, minis y brownies hechos a mano</h1>
       <p class="hero-sub">Elige tus favoritos, arma tu pedido y envíalo por WhatsApp. Nosotros nos encargamos del resto.</p>
@@ -53,19 +58,21 @@
         <a href="#contacto" class="btn btn-borde">Contáctanos</a>
       </div>
     </div>
-    <figure class="hero-foto">
+    <!-- Animación para la imagen: hace un zoom suave -->
+    <figure class="hero-foto" data-aos="zoom-in" data-aos-delay="200">
       <img id="heroImg" data-foto alt="Productos de Pie de Limón" width="1200" height="800">
     </figure>
   </div>
 </section>
 
 <!-- ============ Bloques de valor ============ -->
-<section class="valores-sec" aria-label="Lo que nos distingue">
+<!-- Animación: aparecen de abajo hacia arriba -->
+<section class="valores-sec" aria-label="Lo que nos distingue" data-aos="fade-up">
   <div class="contenedor valores" id="valores"></div>
 </section>
 
 <!-- ============ Categorías (íconos) ============ -->
-<section class="categorias" id="categorias" aria-labelledby="tCat" hidden>
+<section class="categorias" id="categorias" aria-labelledby="tCat" hidden data-aos="fade-up">
   <div class="contenedor">
     <h2 id="tCat">Explora por categoría</h2>
     <div class="iconos" id="iconos"></div>
@@ -73,7 +80,8 @@
 </section>
 
 <!-- ============ Catálogo ============ -->
-<section class="catalogo" id="productos">
+<!-- Animación: la sección entera aparece de abajo hacia arriba -->
+<section class="catalogo" id="productos" data-aos="fade-up">
   <div class="contenedor">
     <h2>Nuestros productos</h2>
     <p class="intro">Toca el <b>+</b> para agregar a tu pedido. Al final lo envías por WhatsApp y coordinamos pago y entrega.</p>
@@ -83,7 +91,7 @@
 </section>
 
 <!-- ============ Contacto ============ -->
-<section class="contacto" id="contacto">
+<section class="contacto" id="contacto" data-aos="fade-up">
   <div class="contenedor">
     <h2>¿Dudas antes de pedir?</h2>
     <p class="intro">Escríbenos y te ayudamos a elegir. También nos encuentras en redes.</p>
@@ -130,5 +138,6 @@
   </svg>
 </a>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>

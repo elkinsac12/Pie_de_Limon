@@ -35,3 +35,9 @@ try {
   $("#grilla").innerHTML = `<p class="sin-prod">No se pudo cargar el catálogo. Abre la página con un servidor local (ver README) y revisa data/productos.json.</p>`;
   iniciarCarrito([]);
 }
+if (window.AOS) {
+  window.AOS.init({
+    duration: 800,
+    once: true,
+  });
+}
