@@ -191,3 +191,6 @@ body.carrito-abierto .grano { opacity: 0; pointer-events: none; }
 @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
 
 [hidden] { display: none !important; }
+nav[aria-label="Redes"] {
+  display: none;
+}
