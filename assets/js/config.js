@@ -3,7 +3,7 @@
    Los productos están en data/productos.json
    ===================================================== */
 export const NEGOCIO = "Pie de Limón";
-export const WHATSAPP = "573000000000";   // <-- CAMBIAR: 57 + tu número, sin + ni espacios
+export const WHATSAPP = "573196176433";   // <-- CAMBIAR: 57 + tu número, sin + ni espacios
 export const INSTAGRAM = "https://www.instagram.com/piedelimon.co/";
 export const FACEBOOK = "https://www.facebook.com/profile.php?id=61558098209943";
 
